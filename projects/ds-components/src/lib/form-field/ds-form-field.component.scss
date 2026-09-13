@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.ds-form-field {
+  width: 100%;
+}
+
+::ng-deep .ds-form-field .mat-form-field-wrapper {
+  padding-bottom: 1.1em;
+  margin: 0;
+}
+
+::ng-deep .ds-form-field .mat-form-field-infix {
+  padding: 0.6em 0 0.8em;
+  border-top-width: 0.6em;
+  font-size: 14px;
+}
+
+::ng-deep .ds-form-field .mat-form-field-flex {
+  background-color: #fbfcfd;
+  border-radius: 2px;
+}
+
+::ng-deep .ds-form-field .mat-form-field-outline {
+  color: #b8c2cc;
+}
+
+::ng-deep .ds-form-field .mat-form-field-label {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #52606d;
+}
+
+::ng-deep .ds-form-field .mat-form-field-subscript-wrapper {
+  font-size: 11px;
+  margin-top: 0.4em;
+}

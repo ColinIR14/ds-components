@@ -1,0 +1,58 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$ds-primary-palette: (
+  50: #e4ebf2,
+  100: #bccddf,
+  200: #8fabc9,
+  300: #6289b3,
+  400: #4070a3,
+  500: #1f4e79,
+  600: #1b4771,
+  700: #173d66,
+  800: #12355c,
+  900: #0a2549,
+  A100: #82b1ff,
+  A200: #448aff,
+  A400: #2979ff,
+  A700: #2962ff,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: white,
+    A400: white,
+    A700: white,
+  ),
+);
+
+$ds-primary: mat.define-palette($ds-primary-palette, 500, 300, 700);
+$ds-accent: mat.define-palette(mat.$teal-palette, 600, 300, 800);
+$ds-warn: mat.define-palette(mat.$red-palette, 700);
+
+$ds-typography: mat.define-typography-config(
+  $font-family: '"Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+);
+
+$ds-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $ds-primary,
+      accent: $ds-accent,
+      warn: $ds-warn,
+    ),
+    typography: $ds-typography,
+    density: -1,
+  )
+);
+
+@include mat.all-component-themes($ds-theme);

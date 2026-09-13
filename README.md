@@ -1,27 +1,43 @@
-# DsComponents
+# ds-components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Enterprise design-system component library for Angular 14, layered on Angular Material 14.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node 18.20.x (pinned via `volta` in `package.json`)
+- Angular 14 / Angular Material 14
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm ci
+ng build ds-components
+```
 
-## Running unit tests
+Output is written to `dist/ds-components`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+```ts
+import { DsComponentsModule } from 'ds-components';
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+@NgModule({ imports: [DsComponentsModule] })
+export class AppModule {}
+```
 
-## Further help
+Include the theme in your global styles:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```scss
+@use 'ds-components/src/lib/theme/ds-theme';
+```
+
+## Components
+
+| Selector          | Wraps                        |
+| ----------------- | ---------------------------- |
+| `ds-button`       | `mat-raised-button`          |
+| `ds-card`         | `mat-card`                   |
+| `ds-form-field`   | `mat-form-field` + `matInput`|
+| `ds-data-table`   | `mat-table`                  |
+| `ds-alert`        | `mat-card` + `mat-icon`      |
+| `ds-nav-header`   | `mat-toolbar`                |

@@ -1,0 +1,12 @@
+<button
+  mat-raised-button
+  class="ds-button"
+  [class.ds-button--secondary]="variant === 'secondary'"
+  [class.ds-button--danger]="variant === 'danger'"
+  [color]="color"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="onClick($event)"
+>
+  <ng-content></ng-content>
+</button>

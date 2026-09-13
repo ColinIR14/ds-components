@@ -1,0 +1,27 @@
+:host {
+  display: inline-block;
+}
+
+.ds-button {
+  border-radius: 2px;
+  min-width: 96px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+::ng-deep .ds-button .mat-button-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 34px;
+}
+
+::ng-deep .ds-button .mat-button-focus-overlay {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+::ng-deep .ds-button .mat-button-ripple {
+  border-radius: 2px;
+}

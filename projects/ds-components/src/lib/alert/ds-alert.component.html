@@ -1,0 +1,10 @@
+<mat-card *ngIf="visible" class="ds-alert" [ngClass]="'ds-alert--' + severity" role="alert">
+  <mat-icon class="ds-alert__icon">{{ icon }}</mat-icon>
+  <div class="ds-alert__body">
+    <div *ngIf="title" class="ds-alert__title">{{ title }}</div>
+    <div class="ds-alert__message"><ng-content></ng-content></div>
+  </div>
+  <button *ngIf="dismissible" mat-icon-button class="ds-alert__close" aria-label="Dismiss" (click)="dismiss()">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-card>
