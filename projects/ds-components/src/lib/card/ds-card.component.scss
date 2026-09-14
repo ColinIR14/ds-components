@@ -14,24 +14,26 @@
   border-top: 3px solid #1f4e79;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
 ::ng-deep .ds-card .mat-card-header-text {
   margin: 0;
   padding: 16px 20px 0;
 }
 
-::ng-deep .ds-card .mat-card-header-text .mat-card-title {
+/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
+::ng-deep .ds-card .mat-card-header-text .mat-mdc-card-title {
   font-size: 16px;
   font-weight: 600;
   color: #1f2933;
   margin-bottom: 4px;
 }
 
-::ng-deep .ds-card .mat-card-content {
+::ng-deep .ds-card .mat-mdc-card-content {
   padding: 16px 20px;
   margin-bottom: 0;
 }
 
-::ng-deep .ds-card .mat-card-actions {
+::ng-deep .ds-card .mat-mdc-card-actions {
   padding: 8px 12px;
   margin: 0;
   border-top: 1px solid #eef1f4;

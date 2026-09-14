@@ -6,32 +6,38 @@
   width: 100%;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-wrapper {
   padding-bottom: 1.1em;
   margin: 0;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-infix {
   padding: 0.6em 0 0.8em;
   border-top-width: 0.6em;
   font-size: 14px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-flex {
   background-color: #fbfcfd;
   border-radius: 2px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-outline {
   color: #b8c2cc;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-label {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #52606d;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .ds-form-field .mat-form-field-subscript-wrapper {
   font-size: 11px;
   margin-top: 0.4em;

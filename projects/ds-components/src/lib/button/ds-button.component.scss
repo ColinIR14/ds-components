@@ -9,6 +9,7 @@
   letter-spacing: 0.08em;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version. */
 ::ng-deep .ds-button .mat-button-wrapper {
   display: inline-flex;
   align-items: center;
@@ -18,10 +19,12 @@
   line-height: 34px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version. */
 ::ng-deep .ds-button .mat-button-focus-overlay {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version. */
 ::ng-deep .ds-button .mat-button-ripple {
   border-radius: 2px;
 }
